@@ -1,0 +1,122 @@
+{
+  "highest_gqa_nll": [
+    {
+      "window": 142,
+      "source_character_offset": 1022030,
+      "input": " hic est Sigeia tellus;\nHic steterat Priami regia celsa senis.'\n\nBIANCA:\nConstrue them.\n\nLUCENTIO:\n'Hic ibat,' as I told you bef",
+      "nll_by_model": {
+        "mha-4": 2.878070592880249,
+        "gqa-2": 2.9908764362335205,
+        "mqa-1": 2.806981325149536,
+        "gqa-pooled": 3.885150909423828
+      }
+    },
+    {
+      "window": 147,
+      "source_character_offset": 1022670,
+      "input": " Sigeia tellus,' I\ntrust you not; 'Hic steterat Priami,' take heed\nhe hear us not, 'regia,' presume not, 'celsa senis,'\ndespair ",
+      "nll_by_model": {
+        "mha-4": 2.7983953952789307,
+        "gqa-2": 2.958578109741211,
+        "mqa-1": 2.9015700817108154,
+        "gqa-pooled": 3.978700637817383
+      }
+    },
+    {
+      "window": 143,
+      "source_character_offset": 1022158,
+      "input": "ore, 'Simois,' I am\nLucentio, 'hic est,' son unto Vincentio of Pisa,\n'Sigeia tellus,' disguised thus to get your love;\n'Hic stet",
+      "nll_by_model": {
+        "mha-4": 2.8290419578552246,
+        "gqa-2": 2.931171417236328,
+        "mqa-1": 2.902909755706787,
+        "gqa-pooled": 3.85673451423645
+      }
+    },
+    {
+      "window": 401,
+      "source_character_offset": 1055182,
+      "input": "d: I said a gown.\n\nPETRUCHIO:\nProceed.\n\nTailor:\n\nGRUMIO:\nI confess the cape.\n\nTailor:\n\nGRUMIO:\nI confess two sleeves.\n\nTailor:\n\n",
+      "nll_by_model": {
+        "mha-4": 2.5310001373291016,
+        "gqa-2": 2.807960271835327,
+        "mqa-1": 2.561176300048828,
+        "gqa-pooled": 3.6504671573638916
+      }
+    },
+    {
+      "window": 822,
+      "source_character_offset": 1109070,
+      "input": " a pox o' that! How came that widow in?\nwidow Dido!\n\nSEBASTIAN:\nWhat if he had said 'widower AEneas' too? Good Lord,\nhow you tak",
+      "nll_by_model": {
+        "mha-4": 2.511800765991211,
+        "gqa-2": 2.6463823318481445,
+        "mqa-1": 2.5306661128997803,
+        "gqa-pooled": 3.941495418548584
+      }
+    }
+  ],
+  "largest_gqa_minus_mha_nll": [
+    {
+      "window": 401,
+      "source_character_offset": 1055182,
+      "input": "d: I said a gown.\n\nPETRUCHIO:\nProceed.\n\nTailor:\n\nGRUMIO:\nI confess the cape.\n\nTailor:\n\nGRUMIO:\nI confess two sleeves.\n\nTailor:\n\n",
+      "nll_by_model": {
+        "mha-4": 2.5310001373291016,
+        "gqa-2": 2.807960271835327,
+        "mqa-1": 2.561176300048828,
+        "gqa-pooled": 3.6504671573638916
+      },
+      "gqa_minus_mha_nll": 0.2769601345062256
+    },
+    {
+      "window": 571,
+      "source_character_offset": 1076942,
+      "input": "ORTENSIO:\nAnd so it is: I wonder what it bodes.\n\nPETRUCHIO:\nMarry, peace it bodes, and love and quiet life,\nAnd awful rule and r",
+      "nll_by_model": {
+        "mha-4": 1.8905131816864014,
+        "gqa-2": 2.16143536567688,
+        "mqa-1": 2.0226287841796875,
+        "gqa-pooled": 3.3724045753479004
+      },
+      "gqa_minus_mha_nll": 0.2709221839904785
+    },
+    {
+      "window": 61,
+      "source_character_offset": 1011662,
+      "input": "RUCHIO:\nCome, come, you wasp; i' faith, you are too angry.\n\nKATHARINA:\nIf I be waspish, best beware my sting.\n\nPETRUCHIO:\nMy rem",
+      "nll_by_model": {
+        "mha-4": 2.066925525665283,
+        "gqa-2": 2.332481622695923,
+        "mqa-1": 2.3124117851257324,
+        "gqa-pooled": 3.6162309646606445
+      },
+      "gqa_minus_mha_nll": 0.26555609703063965
+    },
+    {
+      "window": 145,
+      "source_character_offset": 1022414,
+      "input": "\nbeguile the old pantaloon.\n\nHORTENSIO:\nMadam, my instrument's in tune.\n\nBIANCA:\nLet's hear. O fie! the treble jars.\n\nLUCENTIO:\n",
+      "nll_by_model": {
+        "mha-4": 2.2385916709899902,
+        "gqa-2": 2.5025460720062256,
+        "mqa-1": 2.1598095893859863,
+        "gqa-pooled": 3.939785957336426
+      },
+      "gqa_minus_mha_nll": 0.26395440101623535
+    },
+    {
+      "window": 318,
+      "source_character_offset": 1044558,
+      "input": "t you read?\n\nBIANCA:\nWhat, master, read you? first resolve me that.\n\nLUCENTIO:\nI read that I profess, the Art to Love.\n\nBIANCA:\n",
+      "nll_by_model": {
+        "mha-4": 1.9255876541137695,
+        "gqa-2": 2.1867690086364746,
+        "mqa-1": 2.026710033416748,
+        "gqa-pooled": 3.6488327980041504
+      },
+      "gqa_minus_mha_nll": 0.2611813545227051
+    }
+  ],
+  "note": "Worst windows are diagnostic examples, not an independent test or IID confidence interval."
+}

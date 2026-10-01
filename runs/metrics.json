@@ -1,0 +1,136 @@
+{
+  "started_at_utc": "2026-10-01T01:39:03.284658+00:00",
+  "completed_at_utc": "2026-10-01T01:43:11.170260+00:00",
+  "seed": 42,
+  "steps": 1000,
+  "batch": 16,
+  "context": 128,
+  "source_sha256": "86c4e6aa9db7c042ec79f339dcb96d42b0075e16b8fc2e86bf0ca57e2dc565ed",
+  "selected_from_scratch_model_by_full_validation": "gqa-2",
+  "models": {
+    "mha-4": {
+      "kind": "trained from scratch",
+      "kv_heads": 4,
+      "parameters": 86720,
+      "selected_step": 1000,
+      "training_steps": 1000,
+      "training_characters": 2048000,
+      "training_seconds_including_validation_and_saving": 74.36043603099984,
+      "validation": {
+        "nll_nats_per_character": 1.8601633835879041,
+        "perplexity": 6.424786390333518,
+        "next_character_accuracy": 0.45358244833524686,
+        "evaluated_characters": 111488,
+        "windows": 871,
+        "window_nll_sd": 0.1925889615090543
+      },
+      "test": {
+        "nll_nats_per_character": 1.9754574912013196,
+        "perplexity": 7.209917373184627,
+        "next_character_accuracy": 0.43321254305396095,
+        "evaluated_characters": 111488,
+        "windows": 871,
+        "window_nll_sd": 0.20283489398323448
+      },
+      "float32_kv_payload_bytes_batch1_context128": 131072
+    },
+    "gqa-2": {
+      "kind": "trained from scratch",
+      "kv_heads": 2,
+      "parameters": 78528,
+      "selected_step": 1000,
+      "training_steps": 1000,
+      "training_characters": 2048000,
+      "training_seconds_including_validation_and_saving": 71.61501006899994,
+      "validation": {
+        "nll_nats_per_character": 1.8519040524069943,
+        "perplexity": 6.3719404880866835,
+        "next_character_accuracy": 0.46074913892078073,
+        "evaluated_characters": 111488,
+        "windows": 871,
+        "window_nll_sd": 0.1978306742289964
+      },
+      "test": {
+        "nll_nats_per_character": 1.9731175167278636,
+        "perplexity": 7.193066074069614,
+        "next_character_accuracy": 0.4350333668197474,
+        "evaluated_characters": 111488,
+        "windows": 871,
+        "window_nll_sd": 0.20459024652558502
+      },
+      "float32_kv_payload_bytes_batch1_context128": 65536
+    },
+    "mqa-1": {
+      "kind": "trained from scratch",
+      "kv_heads": 1,
+      "parameters": 74432,
+      "selected_step": 1000,
+      "training_steps": 1000,
+      "training_characters": 2048000,
+      "training_seconds_including_validation_and_saving": 66.77348853700005,
+      "validation": {
+        "nll_nats_per_character": 1.8738316810774338,
+        "perplexity": 6.513205172586878,
+        "next_character_accuracy": 0.45241640355912743,
+        "evaluated_characters": 111488,
+        "windows": 871,
+        "window_nll_sd": 0.20239110794065687
+      },
+      "test": {
+        "nll_nats_per_character": 2.0004829432468876,
+        "perplexity": 7.392625455503454,
+        "next_character_accuracy": 0.42989380022962115,
+        "evaluated_characters": 111488,
+        "windows": 871,
+        "window_nll_sd": 0.21092060701747214
+      },
+      "float32_kv_payload_bytes_batch1_context128": 32768
+    },
+    "gqa-pooled": {
+      "kind": "MHA checkpoint conversion, no uptraining",
+      "kv_heads": 2,
+      "parameters": 78528,
+      "inherited_selected_step": 1000,
+      "additional_training_steps": 0,
+      "validation": {
+        "nll_nats_per_character": 3.537839149361226,
+        "perplexity": 34.392521736349316,
+        "next_character_accuracy": 0.16374856486796785,
+        "evaluated_characters": 111488,
+        "windows": 871,
+        "window_nll_sd": 0.17421892587927498
+      },
+      "test": {
+        "nll_nats_per_character": 3.5361931764709964,
+        "perplexity": 34.33595914096403,
+        "next_character_accuracy": 0.16666367680826635,
+        "evaluated_characters": 111488,
+        "windows": 871,
+        "window_nll_sd": 0.18980006069002664
+      },
+      "float32_kv_payload_bytes_batch1_context128": 65536
+    }
+  },
+  "training_only_unigram": {
+    "test_nll": 3.3478784245725146,
+    "test_perplexity": 28.44232704568749
+  },
+  "experimental_controls": "Same sampled windows/order, seed, width, query heads, layers, FFN, optimizer and steps. KV count changes parameter count; this is not a parameter-matched or compute-matched comparison.",
+  "runtime": {
+    "python": "3.12.14",
+    "tensorflow": "2.20.0",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+    "intra_threads": 2,
+    "inter_threads": 2,
+    "oneDNN": false,
+    "devices": [
+      "PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU')"
+    ]
+  },
+  "limitations": [
+    "One seed, character-level corpus, 128-character context.",
+    "Contiguous held-out windows are correlated, not IID replicates.",
+    "Smaller cache payload is not total RAM usage or a guaranteed latency improvement.",
+    "Head pooling without uptraining can seriously damage quality."
+  ]
+}

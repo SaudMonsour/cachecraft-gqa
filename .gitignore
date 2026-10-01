@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+data/input.txt
+results.partial.json

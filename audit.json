@@ -1,0 +1,139 @@
+{
+  "verified_at_utc": "2026-10-01T03:28:06.323383+00:00",
+  "python": "3.12.14",
+  "tensorflow": "2.20.0",
+  "source_sha256": "86c4e6aa9db7c042ec79f339dcb96d42b0075e16b8fc2e86bf0ca57e2dc565ed",
+  "source_git_blob_sha": "7dcb3a2d4cc3b48b6283dd46870bfeb78f88aac9",
+  "checkpoint_replay": {
+    "mha-4": {
+      "test_nll_difference": 3.969080841770278e-09,
+      "validation_nll_difference": 1.0949190443199086e-09,
+      "maximum_window_nll_difference": 4.76837158203125e-07,
+      "cached_and_reference_seeded_sample_match": true,
+      "maximum_absolute_cached_logit_difference": 8.463859558105469e-06,
+      "all_checked_greedy_predictions_match": true,
+      "graph_traces": {
+        "full": 1,
+        "prefill": 1,
+        "decode": 1
+      }
+    },
+    "gqa-2": {
+      "test_nll_difference": 5.063999664045582e-09,
+      "validation_nll_difference": 3.1478917250638005e-09,
+      "maximum_window_nll_difference": 4.76837158203125e-07,
+      "cached_and_reference_seeded_sample_match": true,
+      "maximum_absolute_cached_logit_difference": 8.702278137207031e-06,
+      "all_checked_greedy_predictions_match": true,
+      "graph_traces": {
+        "full": 1,
+        "prefill": 1,
+        "decode": 1
+      }
+    },
+    "mqa-1": {
+      "test_nll_difference": 1.9571674059193356e-08,
+      "validation_nll_difference": 1.3275891053154965e-08,
+      "maximum_window_nll_difference": 4.76837158203125e-07,
+      "cached_and_reference_seeded_sample_match": true,
+      "maximum_absolute_cached_logit_difference": 2.0660459995269775e-05,
+      "all_checked_greedy_predictions_match": true,
+      "graph_traces": {
+        "full": 1,
+        "prefill": 1,
+        "decode": 1
+      }
+    },
+    "gqa-pooled": {
+      "test_nll_difference": 5.2008646278522974e-09,
+      "validation_nll_difference": 6.02205396660338e-09,
+      "maximum_window_nll_difference": 7.152557373046875e-07,
+      "cached_and_reference_seeded_sample_match": true,
+      "maximum_absolute_cached_logit_difference": 1.0251998901367188e-05,
+      "all_checked_greedy_predictions_match": true,
+      "graph_traces": {
+        "full": 1,
+        "prefill": 1,
+        "decode": 1
+      }
+    }
+  },
+  "conversion_weight_replay_exact": true,
+  "sampled_training_windows_replay_exact": true,
+  "error_window_examples_replay_exact": true,
+  "error_window_nll_absolute_tolerance": 1e-05,
+  "maximum_error_window_nll_difference": 4.76837158203125e-07,
+  "benchmark_statistics_recomputed": true,
+  "cache_payload_formula_matches_tensors": true,
+  "tests": {
+    "passed": 14,
+    "skipped": 0,
+    "test_ids": [
+      "test_architecture.ArchitectureTests.test_cache_payload_reduction_is_real_tensor_storage",
+      "test_architecture.ArchitectureTests.test_cached_logits_match_full_prefix_in_batches",
+      "test_architecture.ArchitectureTests.test_checkpoint_round_trip",
+      "test_architecture.ArchitectureTests.test_future_tokens_do_not_change_past_logits",
+      "test_architecture.ArchitectureTests.test_graphs_do_not_retrace_for_cache_growth_or_batch_size",
+      "test_architecture.ArchitectureTests.test_grouped_attention_matches_repeated_head_reference",
+      "test_architecture.ArchitectureTests.test_head_pooling_preserves_other_weights_and_source",
+      "test_architecture.ArchitectureTests.test_identity_conversion_is_exact",
+      "test_architecture.ArchitectureTests.test_invalid_configuration_conversion_and_cache_are_rejected",
+      "test_architecture.ArchitectureTests.test_query_key_and_value_receive_finite_gradients",
+      "test_architecture.ArchitectureTests.test_request_caches_are_isolated",
+      "test_architecture.ArchitectureTests.test_rotary_offsets_match_full_rotation_and_preserve_norm",
+      "test_architecture.ArchitectureTests.test_seeded_sampling_matches_cached_and_reference",
+      "test_architecture.ArchitectureTests.test_window_resets_preserve_original_context_semantics"
+    ]
+  },
+  "artifact_sha256": {
+    ".gitignore": "3680aa61fa0b9be3427b776f6dea7f4cba8c26b710ef978b46e0c27cc19ce0bf",
+    "README.md": "4628807fd678882ab436cf49ec2a4943ad15a3d8f839f97bbf4867676d1f2729",
+    "USAGE.md": "3103c289cd1a00a1f5b82ec7d9ee2a254c8c88ccf773742b2241938e2f7863e4",
+    "benchmark.py": "727de8ed5de0dc0414137c99b78d14d259ae3f22c3b306a517d818753071f13e",
+    "cachecraft/__init__.py": "5f97d54b4962246e22c13ce469e21c3cb30e46c0b06408c1f3ad1e40c48ef5c1",
+    "cachecraft/conversion.py": "2cad40a6303353f588ed9b0ae20d157a4c90565b234746ba88a0cd072d034a76",
+    "cachecraft/model.py": "a708787d3d9d4fab8fb339fcddaebb2dba63aff2fe7ab552e53ba26ba9c85e4c",
+    "cachecraft/runtime.py": "46c97e9cfe91921715f825ce5cef89f071434c232dba8a471513e3c4908f187c",
+    "convert_checkpoint.py": "1bc1ee96c47bd9ce91146f8dfa7bdaa950a19a416a2dfb3887e153c5743185f5",
+    "data/manifest.json": "ffbe343b8951d11fb4c9c5a85ac3e420dc03cde8ffa795a14c9a69211155f5f3",
+    "environment.lock.txt": "2a475b082c52b4d99eaf8e1f1d0c4f881e100ac676c2dea864f33c7b5f586243",
+    "figures/cache-storage.png": "736a007edc2907f3e6c8cb16920c49110e1f8aa928a7b7ef1958955e5497711c",
+    "figures/conversion-quality.png": "f31137d0e98c0ff6880b30ab474737848727b1aefeb2227bf6c1a862d92ce6a0",
+    "figures/decoding-latency.png": "e97cebf2fd9ed3e1b5790e6cd1d032764e81950a9f10b4e3301cd25b7d62e7db",
+    "figures/error-analysis.png": "29a55a9b24b0799c877b18c9b786ef1fcbd39c45ffacb97eaf0e302770ac2024",
+    "figures/learning-curves.png": "35a57071b9c0b0414136946cd45101e8ec26a09a330300d0af142681eb9cd6bc",
+    "figures/model-comparison.png": "db5fa44e253d99b2c5fc7a6f6dd4bc352e20e7cadfb4c07319db3fcfbd522669",
+    "generate.py": "b3a32c4ed58a6e0887e1048758e7007d7a49324aa6e256ede7e0f9346541e551",
+    "inspect_results.py": "389441c06f27e02fbdc72396418900ea6528299784978bdc62b8b7fc417fd4e6",
+    "plan_cache.py": "9c5ad7837f3bd5dd642ee61ccfa0f586cc564a264e9ecd06be26f062a5f3809b",
+    "prepare.py": "616a09643f787ca05bdece4c3ce2f0339fa2056aa1a04a7dcafc02104ae5ae88",
+    "repository.json": "acdc5edbcbe3a46254582e062e70aefb955ea23b12dc97d8cd7e49de48833af0",
+    "requirements.txt": "07cde048d52cf7b1a90f7e44c88e253e689bef7c58018c87c200767e6b55e619",
+    "runs/benchmark.json": "b168905bfbfc335d52931d80c150bf5b668889cd2b7a3979e0f80f378f3a4ed9",
+    "runs/error_analysis.json": "7171ae600c342cccafa2b7495b24112ff016a43634661bb708591d35c1395c03",
+    "runs/gqa-2/config.json": "4711947e90e4dd512f9982400665a5c126107697be91db2a1802ebce96a401b6",
+    "runs/gqa-2/model.weights.h5": "cc635a5024d41c35a6f0d94b413345b245a2e4d77fe548a12a1a756a934aac50",
+    "runs/gqa-2/sample.txt": "4f35495d1bf60f8ae19f41f5c90faae3444b724c4080480e2333d0ca6a42713f",
+    "runs/gqa-2/test_window_losses.npy": "4aa25fac840c67c67c6cf4aa53047c2a23ac48ccde7149c522d2fc28e4e0d404",
+    "runs/gqa-pooled/config.json": "4711947e90e4dd512f9982400665a5c126107697be91db2a1802ebce96a401b6",
+    "runs/gqa-pooled/conversion.json": "e0eba4d7890febfa0cd357716437e5986f9c88ab5ca103bec2ad44d06a178cc8",
+    "runs/gqa-pooled/model.weights.h5": "0dcbd1a7148f10842f5b9e3e3f637720b64b7d13626d3059f86d2c2925952c2f",
+    "runs/gqa-pooled/sample.txt": "9d1160ba61168ff07ac391a544d760b0a0d212de9177dcac9ebcfcefdbaf3629",
+    "runs/gqa-pooled/test_window_losses.npy": "2e892ff8e5b6dc718dd69c987682efa9cae7bd670baa3e7ec07b7d698f075569",
+    "runs/metrics.json": "8e5657a44e9e696a7652a1b600fb96198c66ad375d9f821b89646ab02fee5452",
+    "runs/mha-4/config.json": "816f7d12c4c364fbb5f4720b96e20e0faa68426c14507b854eb7ac1e1ae7a438",
+    "runs/mha-4/model.weights.h5": "b94eb0e2c7eb95f0f22612cd6af098f82617e526f8872907267a5325731eea40",
+    "runs/mha-4/sample.txt": "1f04116b5ec7a36f21f3b353807893ae6c9aab0ec0af4c30a3e3c3e52108f10d",
+    "runs/mha-4/test_window_losses.npy": "505f4c4e43f513f7c5b7f4764b732309ecf8fa8ab29f2ed668ed75afc3b35db5",
+    "runs/mqa-1/config.json": "d37d8689d39ada0dd3b94c70f09dcaefd8296e2eb39286c75f357a1a1041eb77",
+    "runs/mqa-1/model.weights.h5": "b7ee1aaa4ec55673ce776f454b7d097c23599f92b2ee28ecc732fba965b20d68",
+    "runs/mqa-1/sample.txt": "7c60a97c94ae53df3f348a09c7d6704c66b65da4495ffc5b0f039984ba15aa6d",
+    "runs/mqa-1/test_window_losses.npy": "6cd9697f2b3135dcb620c5008fa7414c1a679e9710e1586b7c1d2d43bdadccd5",
+    "runs/training_history.csv": "804bc3bf96842881a8966c6f62c97c8ed374ac893bec58091ed3f985279f852e",
+    "runs/training_starts.npy": "6e2bd04bab2de765522391f3f65d4abb47ad714a1fd9c69e31bf6966af869b06",
+    "study.py": "15065b66e6d3612cbfaec27b997a572dabeeccf5c7064862f8e746864f2131b3",
+    "tests/test_architecture.py": "9bac3ee2fda086579777e06bf50def0a86321cc07b7b98ae7bc5ed9d52ac6040",
+    "verify.py": "b2ff228f55733e5a50b8ec04fa7dff48797236e4e1d9d8591b5f30849583c61a"
+  },
+  "attribution": "AI-assisted implementation and automated study verification for Saud Alotaibi."
+}

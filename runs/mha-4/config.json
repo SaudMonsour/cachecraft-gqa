@@ -1,0 +1,9 @@
+{
+  "vocabulary": 65,
+  "context": 128,
+  "width": 64,
+  "query_heads": 4,
+  "kv_heads": 4,
+  "layers": 2,
+  "hidden": 128
+}

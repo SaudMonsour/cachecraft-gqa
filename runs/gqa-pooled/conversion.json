@@ -1,0 +1,9 @@
+{
+  "source_checkpoint": "runs/mha-4",
+  "source_checkpoint_sha256": "b94eb0e2c7eb95f0f22612cd6af098f82617e526f8872907267a5325731eea40",
+  "source_kv_heads": 4,
+  "target_kv_heads": 2,
+  "method": "Contiguous K/V projection head mean pooling; other weights unchanged.",
+  "additional_training_steps": 0,
+  "warning": "Not uptrained. This is a conversion diagnostic, not a trained GQA substitute."
+}
